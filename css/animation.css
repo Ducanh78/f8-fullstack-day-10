@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    width: 1200px;
+    height: 100vh;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.grab-dots {
+    position: relative;
+}
+
+.grab-dots span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: black;
+    transform-style: preserve-3d;
+    animation: hehe 3s linear;
+}
+
+@keyframes hehe {
+    0%, 100% {
+        transform: scale(0);
+        transform: translateZ(0)
+    }
+
+    50% {
+        transform: scale(1.2);
+        transform: translateZ(45deg)
+    }
+}
+
+.grab-dots span:first-child {
+    position: absolute;
+    bottom: -30px;
+    left: -100px
+}
+
+.grab-dots span:nth-child(2) {
+    position: absolute;
+    bottom: -25px;
+    left: -70px
+}
+
+.grab-dots span:nth-child(3) {
+    position: absolute;
+    bottom: -20px;
+    left: -40px
+}
+
+.grab-dots span:nth-child(4) {
+    position: absolute;
+    bottom: -15px;
+    left: -10px
+}
+
+.grab-dots span:nth-child(5) {
+    position: absolute;
+    bottom: -10px;
+    left: 20px
+}
+
+.grab-dots span:nth-child(6) {
+    position: absolute;
+    bottom: -5px;
+    left: 50px
+}
+
+.grab-dots span:nth-child(7) {
+    position: absolute;
+    bottom: 0px;
+    left: 80px
+}
+
