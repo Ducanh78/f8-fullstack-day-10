@@ -8,10 +8,13 @@ body {
     justify-content: center;
 }
 
-.grab-dots {
-    position: relative;
+.line {
+    width: 500px;
+    height: 5px;
+    background-color: black;
 }
 
+/* ROW 1 */
 .grab-dots span {
     display: inline-block;
     width: 20px;
@@ -19,61 +22,122 @@ body {
     margin: 4px;
     border-radius: 50%;
     background-color: black;
-    transform-style: preserve-3d;
-    animation: hehe 3s linear;
-}
-
-@keyframes hehe {
-    0%, 100% {
-        transform: scale(0);
-        transform: translateZ(0)
-    }
-
-    50% {
-        transform: scale(1.2);
-        transform: translateZ(45deg)
-    }
-}
-
-.grab-dots span:first-child {
-    position: absolute;
-    bottom: -30px;
-    left: -100px
+    animation: hehe 4s linear infinite;
 }
 
 .grab-dots span:nth-child(2) {
-    position: absolute;
-    bottom: -25px;
-    left: -70px
+    animation-delay: 0.25s;
 }
 
 .grab-dots span:nth-child(3) {
-    position: absolute;
-    bottom: -20px;
-    left: -40px
+    animation-delay: 0.5s;
 }
 
 .grab-dots span:nth-child(4) {
-    position: absolute;
-    bottom: -15px;
-    left: -10px
+    animation-delay: 0.75s;
 }
 
 .grab-dots span:nth-child(5) {
-    position: absolute;
-    bottom: -10px;
-    left: 20px
+    animation-delay: 1s;
 }
 
 .grab-dots span:nth-child(6) {
-    position: absolute;
-    bottom: -5px;
-    left: 50px
+    animation-delay: 1.25s;
 }
 
 .grab-dots span:nth-child(7) {
-    position: absolute;
-    bottom: 0px;
-    left: 80px
+    animation-delay: 1.5s;
 }
 
+@keyframes hehe {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+        opacity: 1;
+        scale: 1;
+    }
+
+    25% {
+        
+        transform: translateY(0px);
+        opacity: 1;
+        scale: 1.5;
+    }
+
+    50% {
+        
+        transform: translateY(40px);
+        opacity: 1;
+        scale: 1.5;
+    }
+
+    75% {
+        transform: translateY(0px);
+        opacity: 0.5;
+        scale: 0.7;
+    }
+    
+}
+
+/* ROW 2 */
+.grab-dots-2 span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: black;
+    animation: OKLA 4s linear infinite;
+}
+
+.grab-dots-2 span:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.grab-dots-2 span:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.grab-dots-2 span:nth-child(4) {
+    animation-delay: 0.75s;
+}
+
+.grab-dots-2 span:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.grab-dots-2 span:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+.grab-dots-2 span:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+@keyframes OKLA {
+    0%,
+    100% {
+        scale: 1;
+        transform: translateY(10px);
+        opacity: 1
+    }
+
+    25% {
+        scale: 0.7;
+        transform: translateY(-30px);
+        opacity: 0.5
+    }
+
+    50% {
+        scale: 1;
+        transform: translateY(-70px);
+        opacity: 1;
+    }
+
+    75% {
+        scale: 1.5;
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
