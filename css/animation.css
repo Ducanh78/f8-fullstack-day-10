@@ -8,12 +8,6 @@ body {
     justify-content: center;
 }
 
-.line {
-    width: 500px;
-    height: 5px;
-    background-color: black;
-}
-
 /* ROW 1 */
 .grab-dots span {
     display: inline-block;
@@ -26,27 +20,27 @@ body {
 }
 
 .grab-dots span:nth-child(2) {
-    animation-delay: 0.25s;
+    animation-delay: 0.3s;
 }
 
 .grab-dots span:nth-child(3) {
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
 }
 
 .grab-dots span:nth-child(4) {
-    animation-delay: 0.75s;
+    animation-delay: 0.9s;
 }
 
 .grab-dots span:nth-child(5) {
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 .grab-dots span:nth-child(6) {
-    animation-delay: 1.25s;
+    animation-delay: 1.5s;
 }
 
 .grab-dots span:nth-child(7) {
-    animation-delay: 1.5s;
+    animation-delay: 1.8s;
 }
 
 @keyframes hehe {
@@ -92,27 +86,27 @@ body {
 }
 
 .grab-dots-2 span:nth-child(2) {
-    animation-delay: 0.25s;
+    animation-delay: 0.3s;
 }
 
 .grab-dots-2 span:nth-child(3) {
-    animation-delay: 0.5s;
+    animation-delay: 0.6s;
 }
 
 .grab-dots-2 span:nth-child(4) {
-    animation-delay: 0.75s;
+    animation-delay: 0.9s;
 }
 
 .grab-dots-2 span:nth-child(5) {
-    animation-delay: 1s;
+    animation-delay: 1.2s;
 }
 
 .grab-dots-2 span:nth-child(6) {
-    animation-delay: 1.25s;
+    animation-delay: 1.5s;
 }
 
 .grab-dots-2 span:nth-child(7) {
-    animation-delay: 1.5s;
+    animation-delay: 1.8s;
 }
 
 @keyframes OKLA {
